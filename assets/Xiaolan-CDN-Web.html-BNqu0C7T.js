@@ -1,4 +1,4 @@
-import{_ as n,c as a,a as e,o as l}from"./app-CpHs93p6.js";const i={};function p(t,s){return l(),a("div",null,[...s[0]||(s[0]=[e(`<h1 id="xiaolan-cdn-web" tabindex="-1"><a class="header-anchor" href="#xiaolan-cdn-web"><span>Xiaolan-CDN-Web</span></a></h1><h2 id="存储库" tabindex="-1"><a class="header-anchor" href="#存储库"><span>存储库</span></a></h2><ul><li>Gitee：<a href="https://gitee.com/Xiaolan23333/Xiaolan-CDN-Web" target="_blank" rel="noopener noreferrer">https://gitee.com/Xiaolan23333/Xiaolan-CDN-Web</a></li><li>GitHub：<a href="https://github.com/Xiaolan2333/Xiaolan-CDN-Web" target="_blank" rel="noopener noreferrer">https://github.com/Xiaolan2333/Xiaolan-CDN-Web</a></li></ul><blockquote><p>本面板，不包含系统主程序本体。</p></blockquote><h2 id="注意事项" tabindex="-1"><a class="header-anchor" href="#注意事项"><span>注意事项</span></a></h2><p>本面板鉴权较为简陋，不建议用于生产环境</p><p>必须修改默认密钥和密码，否则等于裸奔</p><h2 id="从v0-0-2更新" tabindex="-1"><a class="header-anchor" href="#从v0-0-2更新"><span>从V0.0.2更新</span></a></h2><p>由于V0.0.3在目录方面做了较多更改，所以需要使用单独的更新脚本</p><p>一键更新命令：</p><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token function">wget</span> https://github.com/Xiaolan2333/Xiaolan-CDN-Web/releases/download/Xiaolan-CDN-Web-V0.0.3/web-update-to-0.0.3.sh <span class="token operator">&amp;&amp;</span> <span class="token function">chmod</span> <span class="token number">777</span> web-update-to-0.0.3.sh <span class="token operator">&amp;&amp;</span> ./web-update-to-0.0.3.sh</span>
+import{_ as n,c as a,a as e,o as l}from"./app-BYwtXk0D.js";const i={};function t(p,s){return l(),a("div",null,[...s[0]||(s[0]=[e(`<h1 id="xiaolan-cdn-web" tabindex="-1"><a class="header-anchor" href="#xiaolan-cdn-web"><span>Xiaolan-CDN-Web</span></a></h1><h2 id="存储库" tabindex="-1"><a class="header-anchor" href="#存储库"><span>存储库</span></a></h2><ul><li>Gitee：<a href="https://gitee.com/Xiaolan23333/Xiaolan-CDN-Web" target="_blank" rel="noopener noreferrer">https://gitee.com/Xiaolan23333/Xiaolan-CDN-Web</a></li><li>GitHub：<a href="https://github.com/Xiaolan2333/Xiaolan-CDN-Web" target="_blank" rel="noopener noreferrer">https://github.com/Xiaolan2333/Xiaolan-CDN-Web</a></li></ul><blockquote><p>本面板，不包含系统主程序本体。</p></blockquote><h2 id="注意事项" tabindex="-1"><a class="header-anchor" href="#注意事项"><span>注意事项</span></a></h2><p>本面板鉴权较为简陋，不建议用于生产环境</p><p>必须修改默认密钥和密码，否则等于裸奔</p><h2 id="从v0-0-2更新" tabindex="-1"><a class="header-anchor" href="#从v0-0-2更新"><span>从V0.0.2更新</span></a></h2><p>由于V0.0.3在目录方面做了较多更改，所以需要使用单独的更新脚本</p><p>一键更新命令：</p><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token function">wget</span> https://github.com/Xiaolan2333/Xiaolan-CDN-Web/releases/download/Xiaolan-CDN-Web-V0.0.3/web-update-to-0.0.3.sh <span class="token operator">&amp;&amp;</span> <span class="token function">chmod</span> <span class="token number">777</span> web-update-to-0.0.3.sh <span class="token operator">&amp;&amp;</span> ./web-update-to-0.0.3.sh</span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div><ul><li><p>更新后需手动重新修改 server.js 和 index.html 中的配置项</p></li><li><p>此脚本仅支持V0.0.2更新至V0.0.3</p></li></ul><h2 id="从v0-0-3更新" tabindex="-1"><a class="header-anchor" href="#从v0-0-3更新"><span>从V0.0.3更新</span></a></h2><p>由于V0.0.4修改了配置的存储办法，所以需要使用单独的更新方式</p><p>写更新脚本太费事了，而且Web只有一台服务器需要配置，所以手动更新吧</p><ol><li><p>备份 cdn-config.json</p></li><li><p>停止后端进程</p></li></ol><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line">systemctl stop xiaolan-cdn-web</span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div><ol start="3"><li>删除旧文件</li></ol><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token function">rm</span> <span class="token parameter variable">-rf</span> /opt/xiaolan-cdn/xiaolan-cdn-web</span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div><ol start="4"><li>安装新版本</li></ol><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token function">mkdir</span> /opt/xiaolan-cdn/xiaolan-cdn-web</span>
@@ -89,15 +89,15 @@ import{_ as n,c as a,a as e,o as l}from"./app-CpHs93p6.js";const i={};function p
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div><ol start="8"><li>访问面板</li></ol><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line">http://服务器的IP:8000</span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div><h2 id="示例lua脚本" tabindex="-1"><a class="header-anchor" href="#示例lua脚本"><span>示例Lua脚本</span></a></h2><h3 id="_5秒盾" tabindex="-1"><a class="header-anchor" href="#_5秒盾"><span>5秒盾</span></a></h3><h4 id="说明" tabindex="-1"><a class="header-anchor" href="#说明"><span>说明：</span></a></h4><p>必须修改</p><div class="language-lua line-numbers-mode" data-highlighter="prismjs" data-ext="lua"><pre><code><span class="line"><span class="token keyword">local</span> secret <span class="token operator">=</span> <span class="token string">&quot;Welcome-to-Xiaolan-CDN&quot;</span> <span class="token comment">-- 必须修改这个密钥，建议使用复杂随机字符串</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div><p>下面是正文：</p><div class="language-lua line-numbers-mode" data-highlighter="prismjs" data-ext="lua"><pre><code><span class="line"><span class="token comment">-- 配置项</span></span>
-<span class="line"><span class="token keyword">local</span> secret <span class="token operator">=</span> <span class="token string">&quot;Welcome-to-Xiaolan-CDN&quot;</span> <span class="token comment">-- 必须修改这个密钥，建议使用复杂随机字符串</span></span>
-<span class="line"><span class="token keyword">local</span> wait_time <span class="token operator">=</span> <span class="token number">5</span> <span class="token comment">-- 强制等待时间（秒）</span></span>
-<span class="line"><span class="token keyword">local</span> valid_time <span class="token operator">=</span> <span class="token number">3600</span> <span class="token comment">-- Token 有效期（秒）</span></span>
-<span class="line"><span class="token comment">-- 配置项结束</span></span>
+<span class="line"><span class="token keyword">local</span> secret      <span class="token operator">=</span> <span class="token string">&quot;Xiaolan233@&quot;</span> <span class="token comment">-- 务必修改这个密钥！</span></span>
+<span class="line"><span class="token keyword">local</span> cookie_name <span class="token operator">=</span> <span class="token string">&quot;Xiaolan-CDN&quot;</span> <span class="token comment">-- Cookie 的名称</span></span>
+<span class="line"><span class="token keyword">local</span> wait_time   <span class="token operator">=</span> <span class="token number">5</span> <span class="token comment">-- 强制等待时间（秒）</span></span>
+<span class="line"><span class="token keyword">local</span> valid_time  <span class="token operator">=</span> <span class="token number">3600</span> <span class="token comment">-- Token 有效期（秒），2 小时</span></span>
 <span class="line"></span>
-<span class="line"><span class="token keyword">local</span> cookie_name <span class="token operator">=</span> <span class="token string">&quot;Xiaolan-CDN-Token&quot;</span></span>
-<span class="line"><span class="token keyword">local</span> client_ip <span class="token operator">=</span> ngx<span class="token punctuation">.</span>var<span class="token punctuation">.</span>remote_addr</span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">local</span> client_ip  <span class="token operator">=</span> ngx<span class="token punctuation">.</span>var<span class="token punctuation">.</span>remote_addr</span>
 <span class="line"><span class="token keyword">local</span> user_agent <span class="token operator">=</span> ngx<span class="token punctuation">.</span>var<span class="token punctuation">.</span>http_user_agent <span class="token keyword">or</span> <span class="token string">&quot;&quot;</span></span>
-<span class="line"><span class="token keyword">local</span> token <span class="token operator">=</span> ngx<span class="token punctuation">.</span>var<span class="token punctuation">[</span><span class="token string">&quot;cookie_&quot;</span> <span class="token operator">..</span> cookie_name<span class="token punctuation">]</span></span>
+<span class="line"><span class="token keyword">local</span> token      <span class="token operator">=</span> ngx<span class="token punctuation">.</span>var<span class="token punctuation">[</span><span class="token string">&quot;cookie_&quot;</span> <span class="token operator">..</span> cookie_name<span class="token punctuation">]</span></span>
 <span class="line"></span>
 <span class="line"><span class="token comment">-- 签名函数</span></span>
 <span class="line"><span class="token keyword">local</span> <span class="token keyword">function</span> <span class="token function">make_sign</span><span class="token punctuation">(</span>ip<span class="token punctuation">,</span> ua<span class="token punctuation">,</span> ts<span class="token punctuation">)</span></span>
@@ -121,167 +121,93 @@ import{_ as n,c as a,a as e,o as l}from"./app-CpHs93p6.js";const i={};function p
 <span class="line">    <span class="token keyword">end</span></span>
 <span class="line"><span class="token keyword">end</span></span>
 <span class="line"></span>
-<span class="line"><span class="token comment">-- 验证失败或首次访问</span></span>
+<span class="line"><span class="token comment">-- 验证失败或首次访问，生成新的 Token 并展示5秒盾页面</span></span>
 <span class="line"><span class="token keyword">local</span> cur_ts <span class="token operator">=</span> ngx<span class="token punctuation">.</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
 <span class="line"><span class="token keyword">local</span> cur_sign <span class="token operator">=</span> <span class="token function">make_sign</span><span class="token punctuation">(</span>client_ip<span class="token punctuation">,</span> user_agent<span class="token punctuation">,</span> cur_ts<span class="token punctuation">)</span></span>
 <span class="line"><span class="token keyword">local</span> new_token <span class="token operator">=</span> cur_ts <span class="token operator">..</span> <span class="token string">&quot;-&quot;</span> <span class="token operator">..</span> cur_sign</span>
 <span class="line"></span>
-<span class="line"><span class="token comment">-- 渲染 HTML 页面</span></span>
+<span class="line"><span class="token comment">-- HTML 页面</span></span>
 <span class="line">ngx<span class="token punctuation">.</span>header<span class="token punctuation">.</span>content_type <span class="token operator">=</span> <span class="token string">&quot;text/html; charset=utf-8&quot;</span></span>
 <span class="line"><span class="token keyword">local</span> html <span class="token operator">=</span> <span class="token string">[=[</span>
 <span class="line">&lt;!DOCTYPE html&gt;</span>
 <span class="line">&lt;html lang=&quot;en-US&quot; dir=&quot;ltr&quot;&gt;</span>
 <span class="line">&lt;head&gt;</span>
-<span class="line">	&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;</span>
-<span class="line">	&lt;title&gt;请稍候…&lt;/title&gt;</span>
-<span class="line">	&lt;style&gt;</span>
-<span class="line">@keyframes dots {</span>
-<span class="line">	0% {</span>
-<span class="line">		content: &quot;&quot;</span>
-<span class="line">	}</span>
-<span class="line"></span>
-<span class="line">	25% {</span>
-<span class="line">		content: &quot;.&quot;</span>
-<span class="line">	}</span>
-<span class="line"></span>
-<span class="line">	50% {</span>
-<span class="line">		content: &quot;..&quot;</span>
-<span class="line">	}</span>
-<span class="line"></span>
-<span class="line">	75% {</span>
-<span class="line">		content: &quot;...&quot;</span>
-<span class="line">	}</span>
-<span class="line"></span>
-<span class="line">	to {</span>
-<span class="line">		content: &quot;&quot;</span>
-<span class="line">	}</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">* {</span>
-<span class="line">	box-sizing: border-box;</span>
-<span class="line">	margin: 0;</span>
-<span class="line">	padding: 0</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">button,html {</span>
-<span class="line">	font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">body {</span>
-<span class="line">	display: flex;</span>
-<span class="line">	flex-direction: column;</span>
-<span class="line">	height: 100vh;</span>
-<span class="line">	min-height: 100vh</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">body.theme-dark a:active,body.theme-dark a:focus {</span>
-<span class="line">	border-radius: 2px;</span>
-<span class="line">	outline: 2px solid #4693ff;</span>
-<span class="line">	outline-offset: 2px</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">body.theme-light .botnet-banner a:active,body.theme-light .botnet-banner a:focus {</span>
-<span class="line">	border-radius: 2px;</span>
-<span class="line">	outline: 2px solid #4693ff;</span>
-<span class="line">	outline-offset: 2px</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">.main-content {</span>
-<span class="line">	margin: 8rem auto;</span>
-<span class="line">	max-width: 60rem;</span>
-<span class="line">	padding-left: 2rem;</span>
-<span class="line">	padding-right: 2rem;</span>
-<span class="line">	width: 100%</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">.main-content .loading-verifying {</span>
-<span class="line">	height: 76.391px</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">.main-wrapper {</span>
-<span class="line">	align-items: center;</span>
-<span class="line">	display: flex;</span>
-<span class="line">	flex: 1;</span>
-<span class="line">	flex-direction: column</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">h1 {</span>
-<span class="line">	font-size: 2.5rem</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">h1,h2 {</span>
-<span class="line">	font-weight: 600;</span>
-<span class="line">	line-height: 125%</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">h2 {</span>
-<span class="line">	font-size: 1.5rem</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">.ch-ordered-list {</span>
-<span class="line">	padding-left: 1.5rem;</span>
-<span class="line">	padding-right: 0</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">.ch-description {</span>
-<span class="line">	font-weight: 400;</span>
-<span class="line">	margin-bottom: 2rem;</span>
-<span class="line">	margin-top: 0</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">.ch-title {</span>
-<span class="line">	margin: 8px 0</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">.footer {</span>
-<span class="line">	line-height: 1.125rem;</span>
-<span class="line">	margin: 0 auto;</span>
-<span class="line">	max-width: 60rem;</span>
-<span class="line">	padding-left: 2rem;</span>
-<span class="line">	padding-right: 2rem;</span>
-<span class="line">	width: 100%</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">.footer,.footer a {</span>
-<span class="line">	font-size: .75rem</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">.footer-inner {</span>
-<span class="line">	border-top: 1px solid #d9d9d9;</span>
-<span class="line">	display: flex;</span>
-<span class="line">	justify-content: center;</span>
-<span class="line">	padding-bottom: 1rem;</span>
-<span class="line">	padding-top: 1rem</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">.footer-wrapper {</span>
-<span class="line">	text-align: center</span>
-<span class="line">}</span>
-<span class="line"></span>
-<span class="line">.footer-divider {</span>
-<span class="line">	border: 1px solid #d9d9d9;</span>
-<span class="line">	height: 12px</span>
-<span class="line">}</span>
-<span class="line">	&lt;/style&gt;</span>
+<span class="line">    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;</span>
+<span class="line">    &lt;title&gt;请稍候…&lt;/title&gt;</span>
+<span class="line">    &lt;style&gt;</span>
+<span class="line">        @keyframes dots {</span>
+<span class="line">            0% { content: &quot;&quot; }</span>
+<span class="line">            25% { content: &quot;.&quot; }</span>
+<span class="line">            50% { content: &quot;..&quot; }</span>
+<span class="line">            75% { content: &quot;...&quot; }</span>
+<span class="line">            to { content: &quot;&quot; }</span>
+<span class="line">        }</span>
+<span class="line">        * { box-sizing: border-box; margin: 0; padding: 0 }</span>
+<span class="line">        button,html { font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji }</span>
+<span class="line">        body { display: flex; flex-direction: column; height: 100vh; min-height: 100vh }</span>
+<span class="line">        body.theme-dark a:active,body.theme-dark a:focus { border-radius: 2px; outline: 2px solid #4693ff; outline-offset: 2px }</span>
+<span class="line">        body.theme-light .botnet-banner a:active,body.theme-light .botnet-banner a:focus { border-radius: 2px; outline: 2px solid #4693ff; outline-offset: 2px }</span>
+<span class="line">        .main-content { margin: 8rem auto; max-width: 60rem; padding-left: 2rem; padding-right: 2rem; width: 100% }</span>
+<span class="line">        .main-content .loading-verifying { height: 76.391px }</span>
+<span class="line">        .main-wrapper { align-items: center; display: flex; flex: 1; flex-direction: column }</span>
+<span class="line">        h1 { font-size: 2.5rem }</span>
+<span class="line">        h1,h2 { font-weight: 600; line-height: 125% }</span>
+<span class="line">        h2 { font-size: 1.5rem }</span>
+<span class="line">        .ch-ordered-list { padding-left: 1.5rem; padding-right: 0 }</span>
+<span class="line">        .ch-description { font-weight: 400; margin-bottom: 2rem; margin-top: 0 }</span>
+<span class="line">        .ch-title { margin: 8px 0 }</span>
+<span class="line">        .footer { line-height: 1.125rem; margin: 0 auto; max-width: 60rem; padding-left: 2rem; padding-right: 2rem; width: 100% }</span>
+<span class="line">        .footer,.footer a { font-size: .75rem }</span>
+<span class="line">        .footer-inner { border-top: 1px solid #d9d9d9; display: flex; justify-content: center; padding-bottom: 1rem; padding-top: 1rem }</span>
+<span class="line">        .footer-wrapper { text-align: center }</span>
+<span class="line">        .footer-divider { border: 1px solid #d9d9d9; height: 12px }</span>
+<span class="line">    &lt;/style&gt;</span>
 <span class="line">&lt;/head&gt;</span>
 <span class="line">&lt;body&gt;</span>
-<span class="line">	&lt;div class=&quot;main-wrapper lang-zh-cn&quot; role=&quot;main&quot;&gt;</span>
-<span class="line">		&lt;div class=&quot;main-content&quot;&gt;</span>
-<span class="line">			&lt;h1 class=&quot;ch-title spacer-bottom&quot;&gt;执行安全验证&lt;/h1&gt;</span>
-<span class="line">			&lt;h2 class=&quot;ch-description spacer-top&quot;&gt;正在验证您是否是真人，这可能需要几秒钟时间。&lt;/h2&gt;</span>
-<span class="line">      &lt;h1&gt;请等待&lt;span class=&quot;ui-counter&quot;&gt;5&lt;/span&gt;秒&lt;/h1&gt;</span>
-<span class="line">		&lt;/div&gt;</span>
-<span class="line">	&lt;/div&gt;</span>
-<span class="line">	&lt;div class=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;</span>
-<span class="line">		&lt;div class=&quot;footer-inner&quot;&gt;</span>
-<span class="line">			&lt;div class=&quot;footer-wrapper&quot;&gt;</span>
-<span class="line">				&lt;div class=&quot;clearfix diagnostic-wrapper&quot;&gt;</span>
-<span class="line">				&lt;/div&gt;</span>
-<span class="line">				&lt;div class=&quot;footer-link-wrapper&quot;&gt;&lt;span class=&quot;footer-text&quot;&gt;性能和安全由 &lt;a rel=&quot;noopener noreferrer&quot; href=&quot;https://www.xiaolan.xin&quot; target=&quot;_blank&quot;&gt;Xiaolan&lt;/a&gt; 提供&lt;/span&gt;</span>
+<span class="line">    &lt;div class=&quot;main-wrapper lang-zh-cn&quot; role=&quot;main&quot;&gt;</span>
+<span class="line">        &lt;div class=&quot;main-content&quot;&gt;</span>
+<span class="line">            &lt;h1 class=&quot;ch-title spacer-bottom&quot;&gt;执行安全验证&lt;/h1&gt;</span>
+<span class="line">            &lt;h2 class=&quot;ch-description spacer-top&quot;&gt;正在验证您是否是真人，这可能需要几秒钟时间。&lt;/h2&gt;</span>
+<span class="line">            &lt;h1&gt;请等待&lt;span class=&quot;ui-counter&quot;&gt;]=]</span> <span class="token operator">..</span> wait_time <span class="token operator">..</span> <span class="token string">[=[&lt;/span&gt;秒&lt;/h1&gt;</span>
 <span class="line">        &lt;/div&gt;</span>
-<span class="line">			&lt;/div&gt;</span>
-<span class="line">		&lt;/div&gt;</span>
-<span class="line">	&lt;/div&gt;</span>
+<span class="line">    &lt;/div&gt;</span>
+<span class="line">    &lt;div class=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;</span>
+<span class="line">        &lt;div class=&quot;footer-inner&quot;&gt;</span>
+<span class="line">            &lt;div class=&quot;footer-wrapper&quot;&gt;</span>
+<span class="line">                &lt;div class=&quot;clearfix diagnostic-wrapper&quot;&gt;&lt;/div&gt;</span>
+<span class="line">                &lt;div class=&quot;footer-link-wrapper&quot;&gt;</span>
+<span class="line">                    &lt;span class=&quot;footer-text&quot;&gt;性能和安全由 &lt;a rel=&quot;noopener noreferrer&quot; href=&quot;https://www.xiaolan.xin&quot; target=&quot;_blank&quot;&gt;Xiaolan&lt;/a&gt; 提供&lt;/span&gt;</span>
+<span class="line">                &lt;/div&gt;</span>
+<span class="line">            &lt;/div&gt;</span>
+<span class="line">        &lt;/div&gt;</span>
+<span class="line">    &lt;/div&gt;</span>
+<span class="line"></span>
+<span class="line">    &lt;script&gt;</span>
+<span class="line">        (function() {</span>
+<span class="line">            var timeLeft = ]=]</span> <span class="token operator">..</span> wait_time <span class="token operator">..</span> <span class="token string">[=[;</span>
+<span class="line">            var counterEl = document.querySelector(&#39;.ui-counter&#39;);</span>
+<span class="line">            </span>
+<span class="line">            var interval = setInterval(function() {</span>
+<span class="line">                timeLeft--;</span>
+<span class="line">                if (counterEl) {</span>
+<span class="line">                    counterEl.textContent = timeLeft;</span>
+<span class="line">                }</span>
+<span class="line">                </span>
+<span class="line">                if (timeLeft &lt;= 0) {</span>
+<span class="line">                    clearInterval(interval);</span>
+<span class="line">                    </span>
+<span class="line">                    // 倒计时结束，写入 Cookie 并刷新</span>
+<span class="line">                    var d = new Date();</span>
+<span class="line">                    d.setTime(d.getTime() + (]=]</span> <span class="token operator">..</span> valid_time <span class="token operator">..</span> <span class="token string">[=[ * 1000));</span>
+<span class="line">                    var expires = &quot;expires=&quot; + d.toUTCString();</span>
+<span class="line">                    </span>
+<span class="line">                    document.cookie = &quot;]=]</span> <span class="token operator">..</span> cookie_name <span class="token operator">..</span> <span class="token string">[=[&quot; + &quot;=&quot; + &quot;]=]</span> <span class="token operator">..</span> new_token <span class="token operator">..</span> <span class="token string">[=[&quot; + &quot;; &quot; + expires + &quot;; path=/; SameSite=Lax&quot;;</span>
+<span class="line">                    </span>
+<span class="line">                    window.location.reload();</span>
+<span class="line">                }</span>
+<span class="line">            }, 1000);</span>
+<span class="line">        })();</span>
+<span class="line">    &lt;/script&gt;</span>
 <span class="line">&lt;/body&gt;</span>
 <span class="line">&lt;/html&gt;</span>
 <span class="line">]=]</span></span>
@@ -289,4 +215,4 @@ import{_ as n,c as a,a as e,o as l}from"./app-CpHs93p6.js";const i={};function p
 <span class="line">ngx<span class="token punctuation">.</span><span class="token function">say</span><span class="token punctuation">(</span>html<span class="token punctuation">)</span></span>
 <span class="line"><span class="token comment">-- 中断请求，不再向下游传递</span></span>
 <span class="line">ngx<span class="token punctuation">.</span><span class="token function">exit</span><span class="token punctuation">(</span>ngx<span class="token punctuation">.</span>HTTP_OK<span class="token punctuation">)</span></span>
-<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="许可证" tabindex="-1"><a class="header-anchor" href="#许可证"><span>许可证</span></a></h2><p>本项目基于 <strong>MIT License</strong> 开源</p>`,117)])])}const d=n(i,[["render",p]]),r=JSON.parse('{"path":"/Xiaolan-CDN-Web.html","title":"Xiaolan-CDN-Web","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"存储库","slug":"存储库","link":"#存储库","children":[]},{"level":2,"title":"注意事项","slug":"注意事项","link":"#注意事项","children":[]},{"level":2,"title":"从V0.0.2更新","slug":"从v0-0-2更新","link":"#从v0-0-2更新","children":[]},{"level":2,"title":"从V0.0.3更新","slug":"从v0-0-3更新","link":"#从v0-0-3更新","children":[{"level":3,"title":"更换Web服务程序（可选）","slug":"更换web服务程序-可选","link":"#更换web服务程序-可选","children":[]}]},{"level":2,"title":"必改配置（非常重要）","slug":"必改配置-非常重要","link":"#必改配置-非常重要","children":[]},{"level":2,"title":"支持的环境","slug":"支持的环境","link":"#支持的环境","children":[{"level":3,"title":"环境要求","slug":"环境要求","link":"#环境要求","children":[]}]},{"level":2,"title":"半自动安装","slug":"半自动安装","link":"#半自动安装","children":[]},{"level":2,"title":"手动安装","slug":"手动安装","link":"#手动安装","children":[]},{"level":2,"title":"示例Lua脚本","slug":"示例lua脚本","link":"#示例lua脚本","children":[{"level":3,"title":"5秒盾","slug":"_5秒盾","link":"#_5秒盾","children":[]}]},{"level":2,"title":"许可证","slug":"许可证","link":"#许可证","children":[]}],"git":{},"filePathRelative":"Xiaolan-CDN-Web.md"}');export{d as comp,r as data};
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="许可证" tabindex="-1"><a class="header-anchor" href="#许可证"><span>许可证</span></a></h2><p>本项目基于 <strong>MIT License</strong> 开源</p>`,117)])])}const r=n(i,[["render",t]]),o=JSON.parse('{"path":"/Xiaolan-CDN-Web.html","title":"Xiaolan-CDN-Web","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"存储库","slug":"存储库","link":"#存储库","children":[]},{"level":2,"title":"注意事项","slug":"注意事项","link":"#注意事项","children":[]},{"level":2,"title":"从V0.0.2更新","slug":"从v0-0-2更新","link":"#从v0-0-2更新","children":[]},{"level":2,"title":"从V0.0.3更新","slug":"从v0-0-3更新","link":"#从v0-0-3更新","children":[{"level":3,"title":"更换Web服务程序（可选）","slug":"更换web服务程序-可选","link":"#更换web服务程序-可选","children":[]}]},{"level":2,"title":"必改配置（非常重要）","slug":"必改配置-非常重要","link":"#必改配置-非常重要","children":[]},{"level":2,"title":"支持的环境","slug":"支持的环境","link":"#支持的环境","children":[{"level":3,"title":"环境要求","slug":"环境要求","link":"#环境要求","children":[]}]},{"level":2,"title":"半自动安装","slug":"半自动安装","link":"#半自动安装","children":[]},{"level":2,"title":"手动安装","slug":"手动安装","link":"#手动安装","children":[]},{"level":2,"title":"示例Lua脚本","slug":"示例lua脚本","link":"#示例lua脚本","children":[{"level":3,"title":"5秒盾","slug":"_5秒盾","link":"#_5秒盾","children":[]}]},{"level":2,"title":"许可证","slug":"许可证","link":"#许可证","children":[]}],"git":{},"filePathRelative":"Xiaolan-CDN-Web.md"}');export{r as comp,o as data};
